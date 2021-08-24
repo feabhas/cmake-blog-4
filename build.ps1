@@ -57,9 +57,7 @@ $CMAKE_ARGS = '-G', 'Unix Makefiles', "-DCMAKE_MAKE_PROGRAM=$MAKE"
 $BUILD_TYPE = "-DCMAKE_BUILD_TYPE=$BTYPE"
 
 &$CMAKE -S . -B $BUILD_DIR $CMAKE_ARGS `
-        --warn-uninitialized $BUILD_TYPE $TOOLCHAIN $RTOS
-
-&$CMAKE $CMAKE_ARGS -S . -B $BUILD_DIR  
+        --warn-uninitialized $BUILD_TYPE $TOOLCHAIN $RTOS 
 
 if ( $CLEAN  -ne '' ) {
   &$MAKE -C $BUILD_DIR clean
