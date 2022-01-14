@@ -20,7 +20,7 @@ get_filename_component(TOOLCHAIN ${CROSS_GCC_PATH} PATH)
 
 set(CMAKE_C_COMPILER ${TOOLCHAIN}/arm-none-eabi-gcc${SUFFIX})
 set(CMAKE_Cxx_COMPILER ${TOOLCHAIN}/arm-none-eabi-g++${SUFFIX})
-set(TOOLCHAIN_as ${TOOLCHAIN}/arm-none-eabi-as${SUFFIX} CACHE STRING "arm-none-eabi-as")
+set(TOOLCHAIN_AS ${TOOLCHAIN}/arm-none-eabi-as${SUFFIX} CACHE STRING "arm-none-eabi-as")
 set(TOOLCHAIN_LD ${TOOLCHAIN}/arm-none-eabi-ld${SUFFIX} CACHE STRING "arm-none-eabi-ld")
 set(TOOLCHAIN_SIZE ${TOOLCHAIN}/arm-none-eabi-size${SUFFIX} CACHE STRING "arm-none-eabi-size")
 
